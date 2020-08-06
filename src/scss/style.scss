@@ -8,6 +8,15 @@
   }
 }
 
+body {
+  font-family: "OpenSans";
+}
+
+.container {
+  padding: 0 30px;
+  width: auto;
+}
+
 @import "fonts";
 @import "normalize";
-
+@import "header";

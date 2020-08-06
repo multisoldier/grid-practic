@@ -1,0 +1,57 @@
+.header {
+
+&__wrapper-borderbox {
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+}
+
+  &__logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 0;
+    min-width: 175px;
+    margin-left: 86px;
+
+  }
+
+  &__menu-button {
+    display: block;
+    width: 20px;
+    height: 14px;
+    background-image: url("../img/menu-btn.svg");
+  }
+
+  &__nav {
+  }
+
+  &__nav-list {
+  }
+
+  &__nav-link {
+    font-size: 17px;
+    font-weight: 700;
+    
+  }
+
+  &__nav-search-img {
+  }
+
+  &__nav-shop-img {
+  }
+
+  &__title {
+  }
+
+  &__title-heading {
+  }
+}
+.header-title-top {
+  &__links {
+  }
+
+  &__list {
+  }
+
+  &__link {
+  }
+}
