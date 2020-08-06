@@ -88,12 +88,16 @@ body {
   font-family: Montserrat;
   margin: 0 auto;
   padding: 0px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .header {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../img/simon-migaj-Yui5vfKHuzs-unsplash.jpg);
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/simon-migaj-Yui5vfKHuzs-unsplash.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../img/simon-migaj-Yui5vfKHuzs-unsplash.jpg);
+  background-size: 100%;
+  position: relative;
 }
 
 .header__nav {
@@ -118,14 +122,80 @@ body {
   margin-right: 0px;
 }
 
+.header__societes-wrapper {
+  position: absolute;
+  right: 0;
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  right: 2.5%;
+  bottom: -11%;
+}
+
+.header__societes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .header__societes-list {
   list-style-type: none;
+  margin-right: 76px;
+}
+
+.header__societes-list:last-of-type {
+  margin-right: 0px;
+}
+
+.header__center-box-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 10%;
+  left: 50%;
 }
 
 .header__center-box-heading {
+  display: block;
   color: #ffffff;
   font-size: 100px;
   font-weight: 700;
+}
+
+.header__center-box-subtitle {
+  display: block;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 4.2px;
+}
+
+.header__center-box-button-wrapper {
+  margin-top: 42px;
+}
+
+.header__center-box-button {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2.52px;
+  text-decoration: none;
+  border: 2px solid #ffffff;
+  padding: 20px 84px;
 }
 
 .header-links {
