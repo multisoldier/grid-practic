@@ -1,0 +1,55 @@
+.about {
+  padding: 0px 30px;
+  margin-top: 34px;
+  &__heading {
+    margin-bottom: 31px;
+  }
+
+  &__element {
+    margin-bottom: 33px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__element-img {
+    display: block;
+    background-color: #63d1bb;
+    margin-bottom: 23px;
+    &--1 {
+      width: 32px;
+      height: 37px;
+      mask-image: url("../img/icon-1.svg");
+    }
+    &--3 {
+      width: 47px;
+      height: 27px;
+      mask-image: url("../img/icon-3.svg");
+    }
+    &--5 {
+      width: 34px;
+      height: 27px;
+      mask-image: url("../img/icon-5.svg");
+    }
+    &--2 {
+      width: 35px;
+      height: 34px;
+      mask-image: url("../img/icon-2.svg");
+    }
+    &--4 {
+      width: 55px;
+      height: 23px;
+      mask-image: url("../img/icon-4.svg");
+    }
+    &--6 {
+      width: 33px;
+      height: 32px;
+      mask-image: url("../img/icon-6.svg");
+    }
+  }
+
+  &__element-text {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+}
