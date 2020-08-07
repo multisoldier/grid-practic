@@ -2,11 +2,21 @@
 
 body {
   font-family: "OpenSans";
+  color: #010000;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  padding: 0 30px;
   width: auto;
+}
+
+.paragraph {
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 @font-face {
@@ -77,7 +87,7 @@ body {
 
 img {
   max-width: 100%;
-  display: block;
+  height: auto;
 }
 
 /* Наследуем шрифты для инпутов и кнопок */
@@ -92,6 +102,7 @@ select {
 .header__wrapper-borderbox {
   -webkit-box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
           box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+  padding: 0px 30px;
 }
 
 .header__logo-wrapper {
@@ -116,7 +127,204 @@ select {
   background-image: url("../img/menu-btn.svg");
 }
 
+.header__nav {
+  display: none;
+}
+
+.header__nav-list {
+  -webkit-box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+          box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+}
+
 .header__nav-link {
+  padding: 0px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 17px;
   font-weight: 700;
+  color: #010000;
+}
+
+.header__nav-link--no-icon {
+  margin-left: 43px;
+}
+
+.header__nav-img {
+  margin-right: 25px;
+}
+
+.header__title {
+  padding: 0px 38px;
+  min-height: 388px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../img/hero-mobile.jpg);
+  background-position: top;
+}
+
+.header__title-heading {
+  margin-top: -105px;
+  font-size: 27px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.header-title-top {
+  display: none;
+}
+
+.green-boxes {
+  margin-top: -90px;
+}
+
+.green-boxes__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 103px;
+  background-color: #63d1bb;
+}
+
+.green-boxes__box--2 {
+  background-color: #56c3b2;
+}
+
+.green-boxes__title {
+  color: #ffffff;
+  padding-left: 30px;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.green-boxes__miniature {
+  display: block;
+  opacity: 0.5;
+}
+
+.green-boxes__miniature--lamp {
+  background-image: url(../img/interior.svg);
+  width: 40px;
+  height: 62px;
+  margin-right: 36px;
+}
+
+.green-boxes__miniature--lego {
+  background-image: url(../img/lego.svg);
+  width: 60px;
+  height: 60px;
+  margin-right: 27px;
+}
+
+.weekseller {
+  margin-top: 34px;
+  padding: 0px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.weekseller__heading {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #010000;
+}
+
+.weekseller__weekseller {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 5px;
+  display: block;
+  color: #63d1bb;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.weekseller__description {
+  display: block;
+  margin: 30px 0px;
+}
+
+.weekseller__characteristics {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  min-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.weekseller__charact {
+  min-width: 100px;
+}
+
+.weekseller__product-photo {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.weekseller__price {
+  color: #444444;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.weekseller__button-bye {
+  color: #444444;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  border: 2px solid #444444;
+  padding: 20px 85px;
+}
+
+.weekseller__zigzag {
+  margin-top: 36px;
+  background-image: url(../img/zigzag.svg);
+  min-width: 320px;
+  height: 5px;
 }

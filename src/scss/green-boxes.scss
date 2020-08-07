@@ -1,0 +1,38 @@
+.green-boxes {
+  margin-top: -90px;
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 103px;
+    background-color: #63d1bb;
+    &--2 {
+      background-color: #56c3b2;
+    }
+  }
+
+  &__title {
+    color: $font-white;
+    padding-left: 30px;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  &__miniature {
+    display: block;
+    opacity: 0.5;
+    &--lamp {
+      background-image: url(../img/interior.svg);
+      width: 40px;
+      height: 62px;
+      margin-right: 36px;
+    }
+    &--lego {
+      background-image: url(../img/lego.svg);
+      width: 60px;
+      height: 60px;
+      margin-right: 27px;
+    }
+  }
+}

@@ -8,15 +8,32 @@
   }
 }
 
+// color variables
+$font-black: #010000;
+$font-gray: #444444;
+$font-white: #ffffff;
+
 body {
   font-family: "OpenSans";
+  color: $font-black;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  padding: 0 30px;
   width: auto;
+}
+
+.paragraph {
+  color: $font-gray;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 @import "fonts";
 @import "normalize";
 @import "header";
+@import "green-boxes";
+@import "weekseller";

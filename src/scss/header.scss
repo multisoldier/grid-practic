@@ -1,8 +1,8 @@
 .header {
-
-&__wrapper-borderbox {
-  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
-}
+  &__wrapper-borderbox {
+    box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+    padding: 0px 30px;
+  }
 
   &__logo-wrapper {
     display: flex;
@@ -11,7 +11,6 @@
     padding: 22px 0;
     min-width: 175px;
     margin-left: 86px;
-
   }
 
   &__menu-button {
@@ -22,36 +21,52 @@
   }
 
   &__nav {
+    display: none;
   }
 
   &__nav-list {
+    box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80px;
+
   }
 
   &__nav-link {
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
     font-size: 17px;
     font-weight: 700;
-    
+    color: $font-black;
+    &--no-icon {
+      margin-left: 43px;
+    }
   }
 
-  &__nav-search-img {
-  }
-
-  &__nav-shop-img {
+  &__nav-img {
+    margin-right: 25px;
   }
 
   &__title {
+    padding: 0px 38px;
+    min-height: 388px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/hero-mobile.jpg);
+    background-position: top;
+    
   }
 
   &__title-heading {
+    margin-top: -105px;
+    font-size: 27px;
+    font-weight: 700;
+    text-align: center;
   }
 }
 .header-title-top {
-  &__links {
-  }
-
-  &__list {
-  }
-
-  &__link {
-  }
+  display: none;
 }
