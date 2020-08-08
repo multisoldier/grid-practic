@@ -2,15 +2,15 @@
   &__wrapper-borderbox {
     box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
     padding: 0px 30px;
+    position: relative;
   }
 
   &__logo-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 22px 0;
     min-width: 175px;
-    margin-left: 86px;
   }
 
   &__menu-button {
@@ -18,6 +18,9 @@
     width: 20px;
     height: 14px;
     background-image: url("../img/menu-btn.svg");
+    position: absolute;
+    top: 35px;
+    right: 28px;
   }
 
   &__nav {

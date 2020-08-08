@@ -125,6 +125,7 @@ select {
   -webkit-box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
           box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
   padding: 0px 30px;
+  position: relative;
 }
 
 .header__logo-wrapper {
@@ -134,12 +135,11 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 22px 0;
   min-width: 175px;
-  margin-left: 86px;
 }
 
 .header__menu-button {
@@ -147,6 +147,9 @@ select {
   width: 20px;
   height: 14px;
   background-image: url("../img/menu-btn.svg");
+  position: absolute;
+  top: 35px;
+  right: 28px;
 }
 
 .header__nav {
@@ -459,6 +462,7 @@ select {
 }
 
 .reviews__button-lr {
+  display: block;
   width: 50px;
   height: 26px;
   background-position: center;
@@ -466,11 +470,11 @@ select {
 }
 
 .reviews__button-lr--left {
-  background-image: url("/img/huge-arrow-left.svg");
+  background-image: url("../img/huge-arrow-left.svg");
 }
 
 .reviews__button-lr--right {
-  background-image: url("/img/huge-arrow-right.svg");
+  background-image: url("../img/huge-arrow-right.svg");
 }
 
 .reviews__button-wrapper {
